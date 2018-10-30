@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/timepicker-react/precache-manifest.5926863e8e8f9cdb2e57fa4e31004fa3.js"
+  "/timepicker-react/precache-manifest.ea1b8d6ffcae0b4a0d57eb73d00571e0.js"
 );
 
 workbox.clientsClaim();
