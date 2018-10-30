@@ -1,0 +1,97 @@
+.react-custom-time-picker {
+    width: 200px;
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Time Picker Input */
+.react-custom-time-picker .time-picker-input {
+    padding: 5px 0;
+    width: auto;
+    max-height: 30px;
+    position: relative;
+}
+.react-custom-time-picker .time-picker-input input[type="text"] {
+    border: none;
+    padding: 10px;
+    width: auto;
+    font-size: 14px;
+    color: #000;
+    background: #F5F5F5;
+    border: 1px solid #a8c6d2;
+    border-radius: 2px;
+}
+.react-custom-time-picker .time-picker-input input[type="text"]:focus{
+    outline: none;
+}
+.react-custom-time-picker .time-picker-input::after {
+    content: '';
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    border: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.react-custom-time-picker .time-picker-input.focused::after {
+    width: 70%;
+    border: 1px solid #0095ff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* Time List Componenet */
+.react-custom-time-picker .time-component {
+    position: fixed;
+    left: 0;
+    padding: 5px;
+    margin: 8px 0;
+    right: 0;
+    z-index: 1;
+    top: 40px;
+    bottom: 0;
+    max-width: 200px;
+    max-height: 200px;
+}
+.react-custom-time-picker .time-component .component-card {
+    max-height: 200px;
+    overflow-y: scroll;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    font-size: 14px;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+/* width */
+.react-custom-time-picker .time-component .component-card::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+.react-custom-time-picker .time-component .component-card::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+.react-custom-time-picker .time-component .component-card::-webkit-scrollbar-thumb {
+    background: #ddd; 
+}
+/* Handle on hover */
+.react-custom-time-picker .time-component .component-card::-webkit-scrollbar-thumb:hover {
+    background: #BCBCBC; 
+}
+.react-custom-time-picker .time-component .component-card .card-item {
+    min-width: 150px;
+    padding: 0 15px;
+    line-height: 40px;
+}
+.react-custom-time-picker .time-component .component-card .card-item:hover {
+    background: #F5F5F5;
+}
+.react-custom-time-picker .time-component .component-card .card-item .item-value {
+    color: #333;
+    display: block;
+}
